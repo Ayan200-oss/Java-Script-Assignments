@@ -719,4 +719,176 @@
 
 
 
+
 // ************Chapter 14-16************
+
+
+// **Question#1**
+
+// var studentNames = []; 
+
+
+// **Question#2**
+
+// var studentNames = new Array();
+
+
+
+// **Question#3**
+
+// var stringArray = ["apple", "banana", "cherry"];
+// alert(stringArray);
+
+
+
+// **Question#4**
+
+// var numberArray = [1, 2, 3, 4, 5];
+// alert(numberArray);
+
+
+
+// **Question#5**
+
+// var booleanArray = [true, false, true];
+// alert(booleanArray);
+
+
+
+// **Question#6**
+
+// var mixedArray = ["apple", 1, true, "banana", 2, false];
+// alert(mixedArray);
+
+
+// **Question#7**
+
+// var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M.Phil.", "PhD"];
+// document.write("<h1>Qualifications:</h1><br>");
+// for (var i = 0; i < qualifications.length; i++) {
+//     document.write((i + 1) + ") " + qualifications[i] + "<br>");
+// }
+
+
+
+// **Question#8**
+
+// var studentNames = ["Michael", "John", "Tony"];
+// var studentScores = [320, 230, 480];
+// var totalMarks = 500;
+
+// for (var i = 0; i < studentNames.length; i++) {
+//     var percentage = (studentScores[i] / totalMarks) * 100;
+//     document.write("<h2>Score of " + studentNames[i] + " is " + studentScores[i] + ". Percentage: " + percentage + "%</h2><br>");
+// }
+
+
+// **Question#9**
+
+// var colorNames = ["Red", "Green", "Blue"];
+// // a. Add a color to the beginning
+// var colorToAddBeginning = prompt("Enter a color to add to the beginning:");
+// colorNames.unshift(colorToAddBeginning);
+// document.write("<h2>After adding " + colorToAddBeginning + " to the beginning:</h2>");
+// document.write(colorNames + "<br><br>");
+
+// b. Add a color to the end
+// var colorToAddEnd = prompt("Enter a color to add to the end:");
+// colorNames.push(colorToAddEnd);
+// document.write("<h2>After adding " + colorToAddEnd + " to the end:</h2>");
+// document.write(colorNames + "<br><br>");
+
+// c. Add a color at a specific index
+// var colorToAddIndex = prompt("Enter a color to add at a specific index:");
+// var index = prompt("Enter the index at which to add the color:");
+// colorNames.splice(index, 0, colorToAddIndex);
+// document.write("<h2>After adding " + colorToAddIndex + " at index " + index + ":</h2>");
+// document.write(colorNames + "<br><br>");
+
+// d. Remove the first color
+// colorNames.shift();
+// document.write("<h2>After removing the first color:</h2>");
+// document.write(colorNames + "<br><br>");
+
+// e. Remove the last color
+// colorNames.pop();
+// document.write("<h2>After removing the last color:</h2>");
+// document.write(colorNames + "<br><br>");
+
+//f. Add a color from a specific index
+// var indexToAdd = prompt("Enter the index of the color to add:");
+// var colorTo = prompt("Enter the color to add:");
+// colorNames.splice(indexToAdd, 0, colorTo);
+// document.write("<h2>After adding the color at index " + indexToAdd + ":</h2>");
+// document.write(colorNames + "<br><br>");
+
+// g. Remove a color from a specific index
+// var indexToRemove = prompt("Enter the index of the color to remove:");
+// colorNames.splice(indexToRemove, 1);
+// document.write("<h2>After removing the color at index " + indexToRemove + ":</h2>");
+// document.write(colorNames + "<br><br>");
+
+
+// **Question#10**
+
+// var studentScores = [320, 230, 480, 120];
+// studentScores.sort();
+// document.write("<h2>Scores of Students: " + studentScores + "</h2><br>");
+// document.write("<h2>Ordered Scores of Students: " + studentScores + "</h2><br>");
+
+
+// **Question#11**
+
+// var cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+// var selectedCities = cities.slice(2, 4);
+// document.write("<h2>Cities List:</h2>");
+// document.write(cities + "<br><br>");
+// document.write("<h2>Selected Cities List:</h2>");
+// document.write(selectedCities + "<br>");
+
+
+// **Question#12**
+
+// var arr = ["This", "is", "my", "cat"];
+// var str = arr.join(" ");
+// document.write("<h1>Array:</h1>");
+// document.write("<h3>" + arr + "</h3><br><br>");
+// document.write("<h1>String:</h1>");
+// document.write("<h3>" + str + "</h3><br>");
+
+
+
+// **Question#13**
+
+//FIFO (First In First Out)
+
+// var devices = ["Keyboard", "Mouse", "Printer", "Monitor"];
+// document.write("<h2>Devices:</h2>");
+// document.write(devices + "<br><br>");
+// for (var i = 0; i < devices.length; i++) {
+//     document.write("<h3>Out:</h3>");
+//     document.write(devices[i] + "<br>");
+// }
+
+
+// **Question#14**
+
+//LIFO (Last In First Out)
+
+// var devices = ["Keyboard", "Mouse", "Printer", "Monitor"];
+// document.write("<h2>Devices:</h2>");
+// document.write(devices + "<br><br>");
+// for (var i = devices.length - 1; i >= 0; i--) {
+//     document.write("<h3>Out:</h3>");
+//     document.write(devices[i] + "<br>");
+// }
+
+
+// **Question#15**
+
+// var phoneManufacturers = [ "phoneManufacturers","Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+// document.write("<select style='padding: 10px; font-size: 16px; margin: 90px auto; display: flex;'>");
+// for (var i = 0; i < phoneManufacturers.length; i++) {
+//     document.write("<option>" + phoneManufacturers[i] + "</option>");
+// }
+// document.write("</select>");
