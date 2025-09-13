@@ -892,3 +892,136 @@
 //     document.write("<option>" + phoneManufacturers[i] + "</option>");
 // }
 // document.write("</select>");
+
+
+
+// ************Chapter 17-20************
+
+// **Question#1**
+
+//  var multiArray = [[]];
+
+
+// **Question#2**
+
+// var multiArray = new Array(3);
+// multiArray[0] = new Array(0,1,2,3)
+// multiArray[1] = new Array(1,0,1,2)
+// multiArray[2] = new Array(2,1,0,1)
+// document.write(multiArray[0].join(" ") + "<br />")
+// document.write(multiArray[1].join(" ") + "<br />")
+// document.write(multiArray[2].join(" ") + "<br />")
+
+
+// **Question#3**
+
+// for(var i = 1 ; i<=10 ; i++){
+//         document.write(i + "<br />")
+// }
+
+
+// **Question#4**
+
+//  var number = +prompt("Enter a number to show its multiplication table");
+//  var length = +prompt("Enter the length of the table");
+
+// document.write("<h1>Multiplication Table of " + number + "</h1>");
+// document.write("<h1>Length of the Table is " + length + "</h1>");
+// for (var i = 1; i <=length; i++) {
+//     document.write(number + " x " + i + " = " + (number * i) + "<br>");
+// }
+
+
+// **Question#5**
+
+// let fruit = ["apple", "banana", "mango", "orange", "strawberry"]
+
+//  for(var value of fruit){
+//         document.write(value + "<br />" )
+// }
+// for(var prop in fruit){
+//         document.write(`Element at index ${prop} is ${fruit[prop]} <br/>`
+//         )
+// }
+
+
+// **Question#6**
+
+// var Counting = ["1,2,3,4,5,6,7,8,9,10,11,12,13,14,15"];
+// var Reversecounting = ["10,9,8,7,6,5,4,3,2,1"];
+// var Even = ["0,2,4,6,8,10,12,14"];
+// var Odd = ["1,3,5,7,9,11,13,15"];
+// var Series = ["2k,4k,6k,8k,10k,12k,14k,16k,18k,20k"];
+
+// document.write("Counting"+Counting + "<br>");
+// document.write("Reversecounting"+ Reversecounting + "<br>");
+// document.write("Even"+Even + "<br>");
+// document.write("Odd"+Odd + "<br>");
+// document.write("Series"+Series + "<br>");
+
+
+// **Question#7**
+
+// var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+// var search = prompt("Welcome to Ayan Bakers!").toLowerCase()
+// var match = "false"
+// for (var i = 0; i < A.length; i++) {
+//         if (search === A[i]) {
+//                 var match = "true"
+//                 alert( search + " is Available at index " + i + " in our bakery")
+//         }
+
+//  else
+//         alert(`We are sorry. ${search} is  not Available  in our Bakery`)
+// }
+
+
+
+// **Question#8**
+
+
+// let A = [24, 53, 78, 91, 12];
+// let largest = Math.max(...A);
+
+// document.write("The largest number is: " + largest);
+
+
+
+// **Question#9**
+
+// let A = [24, 53, 78, 91, 12];
+// let largest = Math.min(...A);
+
+// document.write("The Smallest number is: " + largest);
+
+
+
+// **Question#10**
+
+//  var number = ("5")
+
+// for (var i = 1; i<=20; i++) {
+//     document.write( (number *  i) + " ");
+// }
+
+
+// ************Chapter 21-25************
+
+
+// **Question#1**
+
+// var firstname = prompt("Enter your first name").toUpperCase();
+// var lastname = prompt("Enter your last name").toUpperCase();
+
+// alert(firstname + " " + lastname + " Welcome to our website");
+
+
+// **Question#2**
+
+// var mobile = prompt("Enter your favorite phone").toUpperCase();
+// var stringlength = (mobile.length)
+
+// document.write("My favorite mobile is: " + mobile + "<br>");
+// document.write("Length of string is: " + stringlength);
+
