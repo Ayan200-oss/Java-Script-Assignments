@@ -1297,3 +1297,277 @@
 // }else{
 //     alert("Try Again!!")
 // }
+
+
+
+// ************Chapter 31-34************
+
+
+
+// **Question#1**
+
+// var date = new Date();
+
+// document.write(date + "<br>")
+
+
+// **Question#2**
+
+// var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+// var date = new Date();
+// var currentMonth = month[date.getMonth()];
+// document.write("Current Month: " + currentMonth + "<br>");
+
+
+
+// **Question#3**
+
+// var day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+// var date = new Date();
+// var currentDay = day[date.getDay()];
+// document.write("Today is: " + currentDay + "<br>");
+
+
+// **Question#4**
+
+// var message;
+
+// var day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+// var date = new Date();
+// var currentDay = day[date.getDay()];
+// if (currentDay === "Sun" || currentDay === "Sat") {
+//     message = "It's Fun day";
+//     alert(message);
+// }   else {
+//     message = "It's a working day";
+//     alert(message);
+// }
+
+
+// **Question#5**
+
+// var date = new Date();
+// var currentDate = date.getDate();
+// if (currentDate < 16) {
+//     document.write("First fifteen days of the month" + "<br>");
+// }
+// else {
+//     document.write("Last days of the month" + "<br>");
+// }
+
+
+// **Question#6**
+
+// var date = new Date();
+// var milliseconds = date.getTime();
+// var minutes = milliseconds / (1000 * 60);
+// document.write("Current Date: " + date + "<br>");
+// document.write("Elapsed milliseconds since January 1, 1970: " + milliseconds + "<br>");
+// document.write("Elapsed minutes since January 1, 1970: " + minutes + "<br>");
+
+
+// **Question#7**
+
+// var date = new Date();
+// var hours = date.getHours();
+// if (hours < 12) {
+//     alert("It's AM");
+// } else {
+//     alert("It's PM");
+// }
+
+
+// **Question#8**
+
+// var laterDate = new Date("December 31, 2020");
+// document.write("Later Date: " + laterDate + "<br>");
+
+
+// **Question#9**
+
+// var ramadanDate = new Date("June 18, 2015");
+// var currentDate = new Date();
+// var timeDiff = currentDate - ramadanDate;
+// var daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+// document.write(daysDiff + " days have passed since 1st Ramadan, 2015" + "<br>");
+
+
+// **Question#10**
+
+// var referenceDate = new Date("December 5, 2015");
+// var currentDate = new Date();
+// var timeDiff = currentDate - referenceDate;
+// var secondsDiff = Math.floor(timeDiff / 1000);
+// document.write("On reference date " + referenceDate + ",<br>" + secondsDiff + " seconds had passed since beginning of 2015" + "<br>");
+
+
+// **Question#11**
+
+// var currentDate = new Date();
+// var currenthours = currentDate.getHours();
+// currentDate.setHours(currenthours - 1);
+// document.write("Current date: " + new Date() + "<br>");
+// document.write("1 hour ago, it was " + currentDate + "<br>");
+
+
+// **Question#12**
+
+// var currentDate = new Date();
+// var currentyear = currentDate.getFullYear();
+// currentDate.setFullYear(currentyear - 100);
+// alert("Current date: " + new Date());
+// document.write("100 years back, it was " + currentDate + "<br>");
+
+
+
+// **Question#13**
+
+// var age = +prompt("Enter your age..")
+
+// var date = new Date();
+// var currentyear = date.getFullYear();
+// var birthyear = currentyear - age;
+// document.write("Your age is " + age + "<br>" + "Your birth year is " + birthyear + "<br>");
+
+
+
+// **Question#14**
+
+// document.write("<h1>K-Electric Bill</h1>" + "<br>");
+
+// // Asking customer name
+// var costname = prompt("Enter your name..");
+// var upper = costname[0].toUpperCase() + costname.slice(1).toLowerCase();
+// document.write("Customer Name: " + upper + "<br>");
+
+// // Getting current month
+// var currentdate = new Date();
+// var month = currentdate.getMonth(); // Months start from 0
+// var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+// document.write("Month: " + months[month] + "<br>");
+
+// // Units and charges
+// var units = 410;
+// document.write("Number of units: " + units + "<br>");
+
+// var chargesperunit = 16;
+// document.write("Charges per unit: " + chargesperunit + "<br><br>");
+
+// // Calculations
+// var netamount = units * chargesperunit;
+// document.write("Net Amount Payable (within Due Date): " + netamount + "<br>");
+
+// var latepayment = 350;
+// document.write("Late Payment Surcharge: " + latepayment + "<br>");
+
+// var lateamount = netamount + latepayment;
+// document.write("Gross Amount Payable (after Due Date): " + lateamount + "<br>");
+
+
+
+
+// ************Chapter 35-38************
+
+
+
+// **Question#1**
+
+// function date(){
+//     var date = new Date();
+//     document.write(date)
+// }
+// date ()
+
+
+// **Question#2**
+
+// function greet(){
+//     var firstname = prompt("Enter your first name").toUpperCase();
+//     var lastname = prompt("Enter your last name").toUpperCase();
+//     document.write("Welcome " + firstname + " " + lastname + " to our website")
+// }
+// greet()
+
+
+
+// **Question#3**
+
+// function add(){
+//     var num1 = +prompt("Enter first number");
+//     var num2 = +prompt("Enter second number");
+//     var sum = num1 + num2;
+//     alert("The sum is: " + sum);
+// }
+// add()
+
+
+
+// **Question#4**
+
+// function calc(){
+//     var num1 = +prompt("Enter first number");
+//     var operator = prompt("Enter operator (+, -, *, /, %)");
+//     var num2 = +prompt("Enter second number");
+//     var result;
+//     if(operator === "+"){
+//         result = num1 + num2;
+//         alert("The result is: " + result);
+//     } else if(operator === "-"){
+//         result = num1 - num2;
+//         alert("The result is: " + result);
+//     } else if(operator === "*"){
+//         result = num1 * num2;
+//         alert("The result is: " + result);
+//     } else if(operator === "/"){
+//         result = num1 / num2;
+//         alert("The result is: " + result);
+//     } else if(operator === "%"){
+//         result = num1 % num2;
+//         alert("The result is: " + result);
+//     } else{
+//         alert("Invalid operator");
+//         return;
+//     }
+// }
+// calc()
+
+
+// **Question#5**
+
+// function square(){
+//     var num = +prompt("Enter a number for squaring");
+//     var square = num * num;
+//     alert("The square of " + num + " is: " + square);
+// }
+// square()
+
+
+// **Question#6**
+
+// function factorial(){
+//     var num = +prompt("Enter a number to find its factorial");
+//     var fact = 1;
+//     for(var i = 1; i<= num; i++){
+//         fact = fact*i;
+
+//     }
+//     alert("The factorial of " + num + " is: " + fact);
+// }
+// factorial()
+
+
+
+// **Question#7**
+
+// function count(){
+//     var start = +prompt("Enter starting number");
+//     var end = +prompt("Enter end number");
+
+//     for (var i = start; i<=end; i++){
+//         document.write(i + "<br>")
+//     }
+// }
+// count()
+
