@@ -1966,3 +1966,47 @@ alert("Number of occurrences of two vowels in succession: " + doubleVowels);
 // document.write(result)
 
 // document.write(remaining)
+
+// ************Chapter 43-48************
+
+// **Question#1**
+
+//done with same alert of Q2
+
+// **Question#2**
+
+// function after(){
+//     Swal.fire({
+//   position: "top-end",
+//   icon: "success",
+//   title: "Thanks for purchasing a phone from us",
+//   showConfirmButton: false,
+//   timer: 1500
+// });
+// }
+
+
+
+//  **Question#3** 
+
+
+
+
+// **Question#4** 
+// done in html file
+
+
+
+// **Question#5** 
+
+// let count = 0;
+
+// function increase() {
+//   count++;
+//   document.getElementById("counter").textContent = count;
+// }
+
+// function decrease() {
+//   count--;
+//   document.getElementById("counter").textContent = count;
+// }
