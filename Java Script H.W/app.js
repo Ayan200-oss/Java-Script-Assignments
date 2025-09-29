@@ -2010,3 +2010,49 @@ alert("Number of occurrences of two vowels in succession: " + doubleVowels);
 //   count--;
 //   document.getElementById("counter").textContent = count;
 // }
+
+//   ************Chapter 49-52************ 
+
+// **Question#1** 
+
+// function formdata() {
+//     var email = document.getElementById("email").value;
+//     var password = document.getElementById("password").value;
+//     var address = document.getElementById("address").value;
+//     var address2 = document.getElementById("address2").value;
+//     var city = document.getElementById("city").value;
+//     var state = document.getElementById("state").value;
+//     var zip = document.getElementById("zip").value;
+//     var output = document.getElementById("output");
+
+//     output.innerHTML = "<h3>Form Data:</h3>" +
+//         "<p><strong>Email:</strong> " + email + "</p>" +
+//         "<p><strong>Password:</strong> " + password + "</p>" +
+//         "<p><strong>Address:</strong> " + address + "</p>" +
+//         "<p><strong>Address 2:</strong> " + address2 + "</p>" +
+//         "<p><strong>City:</strong> " + city + "</p>" +
+//         "<p><strong>State:</strong> " + state + "</p>" +
+//         "<p><strong>Zip:</strong> " + zip + "</p>";
+//         return false;
+//     }
+    
+
+
+// **Question#2** 
+
+// function readMore() {
+//   var dots = document.getElementById("dots");
+//   var moreText = document.getElementById("more");
+//   var btnText = document.getElementById("myBtn");
+
+//   if (dots.style.display === "none") {
+//     dots.style.display = "inline";
+//     btnText.innerHTML = "Read more";
+//     moreText.style.display = "none";
+//   } else {
+//     dots.style.display = "none";
+//     btnText.innerHTML = "Read less";
+//     moreText.style.display = "inline";
+//   }
+// }
+
