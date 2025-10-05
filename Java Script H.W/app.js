@@ -2038,7 +2038,7 @@ alert("Number of occurrences of two vowels in succession: " + doubleVowels);
     
 
 
-// **Question#2** 
+// ******Question#2****** 
 
 // function readMore() {
 //   var dots = document.getElementById("dots");
@@ -2055,4 +2055,89 @@ alert("Number of occurrences of two vowels in succession: " + doubleVowels);
 //     moreText.style.display = "inline";
 //   }
 // }
+
+
+// ********Chapter 21-25*********
+
+//*******Question#1*****
+
+// 1
+// var mainContent = document.getElementById("main-content");
+//     console.log(mainContent);
+
+// 2
+
+    // console.log(mainContent.children);
+
+
+// 3
+
+    //   var renderElements = document.getElementsByClassName("render");
+    // for (var i = 0; i < renderElements.length; i++) {
+    //   document.write(renderElements[i].innerHTML + "<br>");
+    // }
+
+// 4
+
+
+        // document.getElementById("first-name").value = "Alex";
+
+
+
+// 5
+
+    //       document.getElementById("last-name").value = "Bank";
+    // document.getElementById("email").value = "alexbank@example.com";
+
+
+// *****Question#2******
+    
+// Helper function to show node type name
+// function getNodeTypeName(node) {
+//   switch (node.nodeType) {
+//     case 1: return "ELEMENT_NODE";
+//     case 2: return "ATTRIBUTE_NODE";
+//     case 3: return "TEXT_NODE";
+//     case 8: return "COMMENT_NODE";
+//     case 9: return "DOCUMENT_NODE";
+//     case 10: return "DOCUMENT_TYPE_NODE";
+//     default: return "UNKNOWN_NODE";
+//   }
+// }
+
+// 1
+// var formContent = document.getElementById("form-content");
+// document.write("<b>1. Node type of form-content:</b> " + 
+//   formContent.nodeType + " (" + getNodeTypeName(formContent) + ")<br><br>");
+
+// 2
+// var lastName = document.getElementById("lastName");
+// document.write("<b>2. Node type of lastName:</b> " + 
+//   lastName.nodeType + " (" + getNodeTypeName(lastName) + ")<br>");
+// document.write("<b>   Child node type of lastName:</b> " + 
+//   lastName.firstChild.nodeType + " (" + getNodeTypeName(lastName.firstChild) + ")<br><br>");
+
+// 3
+// lastName.firstChild.nodeValue = "Last Name: Updated to Ayan";
+// document.write("<b>3. Updated lastName content:</b> " + lastName.innerHTML + "<br><br>");
+
+// 4
+// var mainContent = document.getElementById("main-content");
+// document.write("<b>4. First child of main-content:</b> " + 
+//   mainContent.firstElementChild.innerHTML + "<br>");
+// document.write("<b>   Last child of main-content:</b> " + 
+//   mainContent.lastElementChild.innerHTML + "<br><br>");
+
+// 5
+// var nextSibling = lastName.nextElementSibling;
+// var prevSibling = lastName.previousElementSibling;
+// document.write("<b>5. Next sibling of lastName:</b> " + nextSibling.innerHTML + "<br>");
+// document.write("<b>   Previous sibling of lastName:</b> " + prevSibling.innerHTML + "<br><br>");
+
+//  6
+// var emailElement = document.getElementById("email");
+// document.write("<b>6. Parent node of email:</b> " + emailElement.parentNode.nodeName + "<br>");
+// document.write("<b>   Node type of email element:</b> " + 
+//   emailElement.nodeType + " (" + getNodeTypeName(emailElement) + ")<br><br>");
+
 
